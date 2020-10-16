@@ -19,23 +19,19 @@ function Home() {
         <div>
           <Title>Video Youtube</Title>
           <div
-            className="video"
             style={{
-              position: 'relative',
-              paddingBottom: '56.25%' /* 16:9 */,
-              paddingTop: 25,
-              height: 0,
+              overflow: 'hidden',
+              height: '100%',
+              margin: '20px',
+              width: '1024px',
+              maxWidth: '800px',
             }}
           >
             <iframe
-              width="960"
-              height="447"
+              scrolling="yes"
+              src="https://www.youtube.com/embed/snTlMy80c_E?autoplay=1&amp;enablejsapi=1&amp;rel=0;modestbranding=1&amp;showsearch=0"
+              style={{ border: '0px none', marginLeft: '0px', height: '500px', marginTop: '-60px', width: '100%' }}
               frameborder="0"
-              src="https://www.youtube.com/embed/zKAAFsovtM4?autoplay=1"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title="video"
             ></iframe>
           </div>
         </div>

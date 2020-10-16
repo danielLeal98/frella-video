@@ -24,6 +24,8 @@ export const DivInput = styled.div`
 export const Title = styled.h2`
   color: black;
   font-size: 22px;
+  text-align: center;
+  margin: 10px;
 `;
 
 export const Input = styled.input`
