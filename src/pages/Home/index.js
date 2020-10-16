@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { DivHome, DivInput, Title, Input, ButtonLogin } from '../Home/styles';
 
 function Home() {
   const [password, setPassword] = useState('');
-  const history = useHistory();
   const isToken = localStorage.getItem('token');
 
   function handlePassword(e) {
@@ -32,6 +30,7 @@ function Home() {
               src="https://www.youtube.com/embed/snTlMy80c_E?autoplay=1&amp;enablejsapi=1&amp;rel=0;modestbranding=1&amp;showsearch=0"
               style={{ border: '0px none', marginLeft: '0px', height: '500px', marginTop: '-60px', width: '100%' }}
               frameborder="0"
+              title="Video Youtube"
             ></iframe>
           </div>
         </div>
@@ -52,7 +51,7 @@ function Home() {
   );
 
   function viewVideo() {
-    if (password == '123456') {
+    if (password === '123456') {
       localStorage.setItem('token', password);
       window.location.reload();
     } else {
